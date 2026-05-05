@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07070a;
+  --foreground: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at top left, rgba(244, 63, 94, 0.22), transparent 34rem),
+    radial-gradient(circle at 80% 12%, rgba(34, 197, 94, 0.16), transparent 28rem),
+    linear-gradient(135deg, #07070a 0%, #111014 48%, #09090b 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #07070a;
+  background: #facc15;
+}
